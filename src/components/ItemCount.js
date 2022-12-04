@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 
-const ItemCount = ({ stock = 0, inicial = 1, onAdd }) => {
+const ItemCount = ({ stock, inicial, onAdd }) => {
 
     const [counter, setCounter] = useState(0);
 
@@ -16,20 +16,23 @@ const ItemCount = ({ stock = 0, inicial = 1, onAdd }) => {
     }
 
     const decrement = () => {
-        if (counter > inicial) {
+        if (counter > inicial + 1) {
             setCounter(counter - 1)
         }
     }
-
 
     return (
         <div className='contador'>
             <button onClick={decrement}>-</button>
             <p>{counter}</p>
             <button onClick={increment}>+</button>
-            <button onClick={() => onAdd(counter)}>Agregar al Carrito</button>
+            {
+                stock && counter
+                    ? <button onClick={() => onAdd(counter)} className='carrito'>Añadir al carrito</button>
+                    : <button>Añadir al carrito</button>
+            }
         </div>
-    )
+    );
 }
 
 

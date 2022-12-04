@@ -63,7 +63,7 @@ const productos = [
         categoriaId: 1
     },
     {
-        nombre: " Camara Webcam C270 Logitech HD ",
+        nombre: "Camara Webcam C270 Logitech HD ",
         qty: 50,
         image: "https://http2.mlstatic.com/cmera-webcam-c270-logitech-hd-720p-pc-notebook-mac-windows-D_NQ_NP_771705-MLB25055885334_092016-F.jpg",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend ipsum non leo porta posuere. Nunc et luctus lorem.",

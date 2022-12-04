@@ -7,10 +7,14 @@ body{
   background-color: rgba(200, 204, 206, 0.671);
 }
 
+html{
+  font-size: 62.5%;
+}
+
 .cabecera{
   text-align: center;
   margin: 20px;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .cabecera span{
@@ -21,7 +25,7 @@ body{
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
-  font-size: 1.3rem;
+  font-size: 2rem;
   list-style: none;
   border-bottom: 3px solid rgba(46, 40, 40, 0.151);
 }
@@ -52,15 +56,15 @@ a{
 .contador {
  display: inline-flex;
  padding: 10px;
- font-size: 2.3rem;
+ font-size: 3rem;
  justify-content: space-evenly;
  margin-left: 10px;
  margin-top: 20px;
- border: 1px solid #000;
 }
 
 .contador button {
-  margin: 5px;
+  margin: 10px;
+  font-size: 2rem;
 }
 
 .contenedorProducto{
@@ -79,11 +83,11 @@ a{
   margin-bottom: 5px;
 }
 
-@media (min-width: 750px){
+/* @media (min-width: 750px){
   .contenedorProducto{
     grid-template-columns: repeat(3, 1fr);
   }
-}
+} */
 
 .productoDetalle{
   font-size: 2rem;
@@ -104,4 +108,84 @@ a{
 
 .productoDetalle img{
     width: 600px;
+}
+
+.pagar{
+  font-size: 1.8rem;
+  padding: 15px;
+  margin-top: 15px;
+  background-color: #3483FA;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.textoEspere{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+}
+
+.texto{
+  font-size: 2.5rem;
+  margin-left: 20px;
+}
+
+.eliminar {
+  font-size: 1.8rem;
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.vaciar{
+  font-size: 1.8rem;
+  display: flex;
+  justify-items: end;
+  background-color: rgb(189, 34, 65);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.tarjeta{
+  margin-top: 15px;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.8rem;
+  line-height: 2;
+}
+
+.tarjeta img{
+  width: 300px;
+  text-align: left;
+}
+
+.totalPagar{
+  font-size: 2rem;
+  border: 1px solid #000;
+  border-radius: 20px;
+  margin: 15px;
+  padding: 20px;
+}
+
+.pagar{
+  display: flex;
+  -ms-flex-align: end;
+}
+
+.textPagar{
+  font-size: 2.5rem;
+}
+
+.textPagar span{
+  color: crimson;
 }
